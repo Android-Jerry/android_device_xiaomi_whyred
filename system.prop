@@ -207,6 +207,9 @@ persist.ov13855_sunny.light.lux=370
 persist.s5k3l8_ofilm.low.lux=379
 persist.s5k3l8_ofilm.light.lux=367
 
+# hal3
+persist.camera.HAL3.enabled=1
+
 # Create zram disk
 #ro.vendor.qti.config.zram=true
 
@@ -254,6 +257,16 @@ qemu.hw.mainkeys=0
 
 #low audio flinger standby delay to reduce power consumption
 ro.audio.flinger_standbytime_ms=300
+
+#volte and vowifi
+#persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+#persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.rat_on=combine
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.radio.calls.on.ims=1
 
 #Vendor security patch
 ro.lineage.build.vendor_security_patch=2018-04-01
