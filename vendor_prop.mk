@@ -57,6 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,org.cyanogenmod.snap \
+    persist.camera.HAL3.enabled=1 \
     persist.camera.preview.ubwc=0 \
     persist.camera.stats.test=0 \
     persist.camera.depth.focus.cb=0 \
@@ -151,7 +152,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
     persist.radio.videopause.mode=1 \
     persist.data.iwlan.enable=true \
-    persist.radio.VT_HYBRID_ENABLE=1
+    persist.radio.VT_HYBRID_ENABLE=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.radio.rat_on=combine \
+    persist.radio.data_ltd_sys_ind=1 \
+    persist.radio.data_con_rprt=1 \
+    persist.radio.calls.on.ims=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
